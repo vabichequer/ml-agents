@@ -13,7 +13,8 @@ namespace Unity.MLAgentsExamples
     {
         [HideInInspector] public Agent agent;
 
-        [Header("Ground Check")] public bool agentDoneOnGroundContact; // Whether to reset agent on ground contact.
+        [Header("Ground Check")]
+        public bool agentDoneOnGroundContact; // Whether to reset agent on ground contact.
         public bool penalizeGroundContact; // Whether to penalize on contact.
         public float groundContactPenalty; // Penalty amount (ex: -1).
         public bool touchingGround;

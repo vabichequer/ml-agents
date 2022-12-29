@@ -52,7 +52,7 @@ namespace Unity.MLAgentsExamples
             m_startingPos = transform.position;
             if (respawnIfTouched)
             {
-                MoveTargetToRandomPosition();
+                //MoveTargetToRandomPosition();
             }
         }
 
@@ -63,7 +63,7 @@ namespace Unity.MLAgentsExamples
                 if (transform.position.y < m_startingPos.y - fallDistance)
                 {
                     Debug.Log($"{transform.name} Fell Off Platform");
-                    MoveTargetToRandomPosition();
+                    //MoveTargetToRandomPosition();
                 }
             }
         }
@@ -85,7 +85,8 @@ namespace Unity.MLAgentsExamples
                 onCollisionEnterEvent.Invoke(col);
                 if (respawnIfTouched)
                 {
-                    MoveTargetToRandomPosition();
+                    //MoveTargetToRandomPosition();
+                    Debug.Log("Target was touched!");
                 }
             }
         }

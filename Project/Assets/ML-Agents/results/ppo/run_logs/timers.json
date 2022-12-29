@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1672244915",
+        "python_version": "3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\vabicheq\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\mlagents-learn --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1672244942"
+    },
+    "total": 26.9424193,
+    "count": 1,
+    "self": 0.006252299999999877,
+    "children": {
+        "run_training.setup": {
+            "total": 0.12962950000000006,
+            "count": 1,
+            "self": 0.12962950000000006
+        },
+        "TrainerController.start_learning": {
+            "total": 26.8065375,
+            "count": 1,
+            "self": 0.0005033999999994876,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 26.806024400000002,
+                    "count": 1,
+                    "self": 26.806024400000002
+                },
+                "trainer_threads": {
+                    "total": 8.999999998593466e-07,
+                    "count": 1,
+                    "self": 8.999999998593466e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.79999999980896e-06,
+                    "count": 1,
+                    "self": 8.79999999980896e-06
+                }
+            }
+        }
+    }
+}
