@@ -160,6 +160,20 @@ public class GetUpAgent : Agent
             AddReward(-1f);
             EndEpisode();
         }
+        else
+        {
+            AddReward(1f / Vector3.Distance(head.position, target.position));
+            AddReward(0.75f / Vector3.Distance(chest.position, target.position));
+            AddReward(0.5f / Vector3.Distance(hips.position, target.position));
+            if (bpDict[footR].groundContact.touchingGround)
+            {
+                AddReward(1f);
+            }
+            if (bpDict[footL].groundContact.touchingGround)
+            {
+                AddReward(1f);
+            }
+        }
     }
 
     /// <summary>

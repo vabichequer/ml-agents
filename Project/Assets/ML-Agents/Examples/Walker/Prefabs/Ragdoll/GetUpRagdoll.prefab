@@ -280,8 +280,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895268871377934275}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -289,7 +289,7 @@ Transform:
   - {fileID: 5370605450757534085}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &895268871377934297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 243
+    VectorObservationSize: 110
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 39
@@ -312,8 +312,8 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 11400000, guid: 3d2957ae3ba76a84d9d53bd3b81c0197, type: 3}
-  m_InferenceDevice: 2
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: GetUp
   TeamId: 0
@@ -336,8 +336,8 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
-  target: {fileID: 0}
+  MaxStep: 1000
+  target: {fileID: 3839136118347789758, guid: 46734abd0de454192b407379c6a4ab8d, type: 3}
   hips: {fileID: 895268871264836332}
   chest: {fileID: 7933235354845945071}
   spine: {fileID: 7933235354652902033}
